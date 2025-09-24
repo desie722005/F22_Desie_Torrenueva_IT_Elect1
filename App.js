@@ -1,16 +1,20 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
 
-import React from 'react';
-import { SafeAreaView } from 'react-native';
-import CounterApp from './CounterApp';
-import ColorChangerApp from './ColorChangerApp';
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text>Cherry Ruth A. Taghoy</Text>
+      <StatusBar style="auto" />
+    </View>
+  );
+}
 
-const App = () => {
-    return (
-        <SafeAreaView style={{ flex: 1 }}>
-            <CounterApp />
-            <ColorChangerApp />
-        </SafeAreaView>
-    );
-};
-
-export default App;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
